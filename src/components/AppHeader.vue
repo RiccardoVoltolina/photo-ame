@@ -22,9 +22,15 @@ export default {
         </button>
         <div class="collapse navbar-collapse" id="navbarID">
           <div class="navbar-nav d-flex justify-content-end w-100">
-            <a class="nav-link active" aria-current="page" href="#">Mare</a>
-            <a class="nav-link active" aria-current="page" href="#">Montagna</a>
-            <a class="nav-link active" aria-current="page" href="#">Subaquea</a>
+            <router-link to="/subaquea" class="nav-link text-light">
+              <a class="nav-link active" aria-current="page" href="#">Subaquea</a>
+            </router-link>
+            <router-link to="/montagna" class="nav-link text-light">
+              <a class="nav-link active" aria-current="page" href="#">Montagna</a>
+            </router-link> 
+            <router-link to="/plants" class="nav-link text-light">
+              <a class="nav-link active" aria-current="page" href="#">Piante</a>
+            </router-link>           
 
 
           </div>
