@@ -15,7 +15,7 @@ export default {
   <header>
     <nav class="navbar navbar-expand-sm navbar-light bg-primary">
       <div class="container-fluid mx-5">
-        <a class="navbar-brand" href="/">Logo</a>
+        <a class="navbar-brand" href="/">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"
           aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
