@@ -23,7 +23,7 @@ export default {
         <div class="collapse navbar-collapse" id="navbarID">
           <div class="navbar-nav d-flex justify-content-end w-100">
             <router-link to="/subaquea" class="nav-link text-light">
-              <a class="nav-link active" aria-current="page" href="#">Subaquea</a>
+              <a class="nav-link active" aria-current="page" href="#">Subacquea</a>
             </router-link>
             <router-link to="/montagna" class="nav-link text-light">
               <a class="nav-link active" aria-current="page" href="#">Montagna</a>

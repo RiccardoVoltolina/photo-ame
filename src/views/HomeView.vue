@@ -44,7 +44,7 @@ export default {
 <template>
     <div class="py-5 ps-5 container">
 
-        <div class="swiper_img_container margin_bottom_150">
+        <div class="swiper_img_container margin_bottom_150 pe-4">
             <swiper :slidesPerView="1" :spaceBetween="30" :loop="true" :pagination="{
                 clickable: true,
             }" :navigation="true" :modules="modules" class="mySwiper">
