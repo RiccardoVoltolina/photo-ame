@@ -92,11 +92,17 @@ export default {
             <SmallImage :img="'src/assets/img/img-small.jpg'"></SmallImage>
 
         </div>
-
     </div>
 </template>
 
 <style>
+
+img:hover {
+    filter: blur(5px);
+    cursor: pointer;
+}
+
+
 .swiper_img_container img {
     width: 100%;
     height: 300px;

@@ -5,7 +5,7 @@ export default {
     return {
 
     };
-    
+
   },
   props: {
     img: String,
@@ -22,7 +22,6 @@ export default {
 </template>
 
 <style>
-
 .vertical_img_container {
   width: 280px !important;
   height: 450px !important;
@@ -33,5 +32,13 @@ export default {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
+}
+
+@media screen and (max-width: 992px) {
+  .vertical_img_container {
+    width: 100% !important;
+    height: 450px !important;
+  }
+
 }
 </style>
