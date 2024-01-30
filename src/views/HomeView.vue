@@ -49,28 +49,34 @@ export default {
                 clickable: true,
             }" :navigation="true" :modules="modules" class="mySwiper">
                 <swiper-slide>
-                    <div class="position-relative">
-                        <div class="img-container">
-                            <img class="img-hover" src="../assets/img/img-small.jpg" alt="">
+                    <router-link to="/subaquea" class="nav-link text-light">
+                        <div class="position-relative">
+                            <div class="img-container">
+                                <img class="img-hover" src="../assets/img/img-small.jpg" alt="">
+                            </div>
+                            <h1 class="scritta_img">Subacquea</h1>
                         </div>
-                        <h1 class="scritta_img">Subacquea</h1>
-                    </div>
+                    </router-link>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="position-relative">
-                        <div class="img-container">
-                            <img class="img-hover" src="../assets/img/img-medium.jpg" alt="">
+                    <router-link to="/montagna" class="nav-link text-light">
+                        <div class="position-relative">
+                            <div class="img-container">
+                                <img class="img-hover" src="../assets/img/img-medium.jpg" alt="">
+                            </div>
+                            <h1 class="scritta_img">Montagna</h1>
                         </div>
-                        <h1 class="scritta_img">Montagna</h1>
-                    </div>
+                    </router-link>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="position-relative">
-                        <div class="img-container">
-                            <img class="img-hover" src="../assets/img/img-big.jpg" alt="">
+                    <router-link to="/plants" class="nav-link text-light">
+                        <div class="position-relative">
+                            <div class="img-container">
+                                <img class="img-hover" src="../assets/img/img-big.jpg" alt="">
+                            </div>
+                            <h1 class="scritta_img">Piante</h1>
                         </div>
-                        <h1 class="scritta_img">Piante</h1>
-                    </div>
+                    </router-link>
                 </swiper-slide>
             </swiper>
         </div>
@@ -140,7 +146,8 @@ export default {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    z-index: 1; 
+    z-index: 1;
+    color: black;
 }
 
 .img-container {

@@ -30,9 +30,7 @@ export default {
             </router-link> 
             <router-link to="/plants" class="nav-link text-light">
               <a class="nav-link active" aria-current="page" href="#">Piante</a>
-            </router-link>           
-
-
+            </router-link>    
           </div>
         </div>
       </div>
