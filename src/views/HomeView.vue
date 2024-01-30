@@ -50,31 +50,34 @@ export default {
             }" :navigation="true" :modules="modules" class="mySwiper">
                 <swiper-slide>
                     <div class="position-relative">
+                        <div class="img-container">
+                            <img class="img-hover" src="../assets/img/img-small.jpg" alt="">
+                        </div>
                         <h1 class="scritta_img">Subacquea</h1>
-                        <img src="../assets/img/img-small.jpg" alt="">
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="position-relative">
+                        <div class="img-container">
+                            <img class="img-hover" src="../assets/img/img-medium.jpg" alt="">
+                        </div>
                         <h1 class="scritta_img">Montagna</h1>
-                        <img src="../assets/img/img-medium.jpg" alt="">
                     </div>
                 </swiper-slide>
                 <swiper-slide>
                     <div class="position-relative">
+                        <div class="img-container">
+                            <img class="img-hover" src="../assets/img/img-big.jpg" alt="">
+                        </div>
                         <h1 class="scritta_img">Piante</h1>
-                        <img src="../assets/img/img-big.jpg" alt="">
                     </div>
                 </swiper-slide>
             </swiper>
         </div>
 
-
-
         <!-- sezione immagine piccola e media -->
 
         <div class="row w-100 row-cols-6 row-cols-sm-12 w-100 justify-content-between gy-5 margin_bottom_150">
-
 
             <SmallImage :img="'src/assets/img/img-small.jpg'"></SmallImage>
             <MediumImage :img="'src/assets/img/img-medium.jpg'"></MediumImage>
@@ -94,14 +97,12 @@ export default {
 
         <div class="row row-cols-6 row-cols-sm-12 w-100 justify-content-between gy-5 margin_bottom_150">
 
-
             <BigImage :img="'src/assets/img/img-big.jpg'"></BigImage>
             <SmallImage :img="'src/assets/img/img-small.jpg'"></SmallImage>
 
         </div>
 
         <div class="row row-cols-6 row-cols-sm-12 w-100 justify-content-between gy-5 margin_bottom_150">
-
 
             <BigImage :img="'src/assets/img/ame.foglia.jpeg'"></BigImage>
             <SmallImage :img="'src/assets/img/img-small.jpg'"></SmallImage>
@@ -111,21 +112,24 @@ export default {
 </template>
 
 <style>
-
-/* img:hover {
-    filter: blur(5px);
-    cursor: pointer;
-} */
 .swiper_img_container img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
+.position-relative {
+    position: relative;
+}
+
 .position-relative:hover .scritta_img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.position-relative:hover .img-hover {
+    filter: blur(5px);
 }
 
 .scritta_img {
@@ -136,6 +140,17 @@ export default {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
+    z-index: 1; 
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-hover {
+    position: relative;
+    z-index: 1;
 }
 
 .margin_bottom_150 {
@@ -146,6 +161,6 @@ export default {
     .margin_bottom_150 {
         padding-bottom: 50px;
     }
-
 }
 </style>
+
