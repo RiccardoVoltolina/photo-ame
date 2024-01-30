@@ -13,7 +13,7 @@ export default {
 
 <template>
   <header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container-fluid mx-5">
         <a class="navbar-brand" href="/">Home</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarID"

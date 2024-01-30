@@ -71,7 +71,7 @@ export default {
         <div class="row row-cols-6 row-cols-sm-12 w-100 justify-content-between gy-5 margin_bottom_150">
 
             <BigImage :img="'src/assets/img/img-big.jpg'"></BigImage>
-            <VerticalImage :img="'src/assets/img/ame.GIF'"></VerticalImage>
+            <VerticalImage :img="'src/assets/img/ame.foglia.jpeg'"></VerticalImage>
 
         </div>
 
@@ -81,6 +81,14 @@ export default {
 
 
             <BigImage :img="'src/assets/img/img-big.jpg'"></BigImage>
+            <SmallImage :img="'src/assets/img/img-small.jpg'"></SmallImage>
+
+        </div>
+
+        <div class="row row-cols-6 row-cols-sm-12 w-100 justify-content-between gy-5 margin_bottom_150">
+
+
+            <BigImage :img="'src/assets/img/ame.foglia.jpeg'"></BigImage>
             <SmallImage :img="'src/assets/img/img-small.jpg'"></SmallImage>
 
         </div>
@@ -103,6 +111,6 @@ export default {
     .margin_bottom_150 {
         padding-bottom: 50px;
     }
-    
+
 }
 </style>
