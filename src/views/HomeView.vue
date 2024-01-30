@@ -48,9 +48,24 @@ export default {
             <swiper :slidesPerView="1" :spaceBetween="30" :loop="true" :pagination="{
                 clickable: true,
             }" :navigation="true" :modules="modules" class="mySwiper">
-                <swiper-slide> <img src="../assets/img/img-small.jpg" alt=""></swiper-slide>
-                <swiper-slide> <img src="../assets/img/img-medium.jpg" alt=""></swiper-slide>
-                <swiper-slide> <img src="../assets/img/img-big.jpg" alt=""></swiper-slide>
+                <swiper-slide>
+                    <div class="position-relative">
+                        <h1 class="scritta_img">Subacquea</h1>
+                        <img src="../assets/img/img-small.jpg" alt="">
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="position-relative">
+                        <h1 class="scritta_img">Montagna</h1>
+                        <img src="../assets/img/img-medium.jpg" alt="">
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="position-relative">
+                        <h1 class="scritta_img">Piante</h1>
+                        <img src="../assets/img/img-big.jpg" alt="">
+                    </div>
+                </swiper-slide>
             </swiper>
         </div>
 
@@ -97,16 +112,30 @@ export default {
 
 <style>
 
-img:hover {
+/* img:hover {
     filter: blur(5px);
     cursor: pointer;
-}
-
-
+} */
 .swiper_img_container img {
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+.position-relative:hover .scritta_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scritta_img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
 }
 
 .margin_bottom_150 {
